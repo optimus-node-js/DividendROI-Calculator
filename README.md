@@ -1,44 +1,39 @@
-# DividendROI-Calculator
+# 💰 DividendROI-Calculator
 
+> A Python tool that tells you how much dividend income you can still earn with your available capital — using live NSE prices from Angel One and ex-dividend dates stored in MongoDB.
 
-**DividendTracker** is a Python script designed to help investors analyze potential dividend earnings from listed companies on the National Stock Exchange (NSE) of India. It utilizes data from the NSE and Angel One API to fetch information about dividend-paying companies, their current prices, and dividend amounts. The script calculates the potential dividend earnings based on the user's available balance and provides insights into active and inactive dividend opportunities.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Angel One SmartAPI](https://img.shields.io/badge/Angel%20One%20SmartAPI-E4572E?style=flat-square)
 
-## Features:
+## ✨ Features
 
-- Fetches current stock prices using the Angel One API.
-- Determines the dividend status (active or inactive) based on ex-dividend dates.
-- Calculates potential dividend earnings for each company.
-- Provides a summary of total potential dividend earnings and dividend opportunities.
-- Offers insights into missed dividend opportunities and remaining earnable dividends.
+- Fetches current stock prices through the Angel One SmartAPI
+- Determines whether each dividend is still **active** (before ex-date) or **missed**
+- Calculates shares affordable and potential dividend earnings per company for your balance
+- Summarises total earnable dividends, missed opportunities and remaining upside
 
-## How to Use:
+## 🚀 Usage
 
-1. **Clone the repository** to your local machine.
-2. **Install the required dependencies** listed in `requirements.txt`.
-3. **Update the MongoDB connection details and API credentials** in the script.
-4. **Run the script** and enter your available balance when prompted.
-5. **View the generated table** with dividend information and earnings potential.
+```bash
+git clone https://github.com/optimus-node-js/DividendROI-Calculator.git
+cd DividendROI-Calculator
+```
 
-## Dependencies:
+```bash
+pip install pymongo requests smartapi-python
+python driver.py      # enter your available balance when prompted
+```
 
-- Python 3.x
-- pymongo
-- requests
-- BeautifulSoup (bs4)
-- tabulate
-- pyotp
-- SmartApi
+Set your own MongoDB URI and Angel One credentials (redacted in this public repo) before running.
 
-## Contribution Guidelines:
+---
 
-Contributions to **DividendTracker** are welcome! If you find any bugs, have feature requests, or want to contribute enhancements, please follow these steps:
+## 👤 Author
 
-1. **Fork the repository**.
-2. Create a new branch for your changes (`git checkout -b feature/new-feature`).
-3. **Make your changes** and commit them (`git commit -am 'Add new feature'`).
-4. **Push your changes** to your fork (`git push origin feature/new-feature`).
-5. **Submit a pull request** with a detailed description of your changes.
+**Rahul Vishwakarma** — Senior Full Stack Developer · Ahmedabad, India
 
-## License:
+[![Portfolio](https://img.shields.io/badge/Portfolio-rahul--vishwakarma--portfolio.vercel.app-0A66C2?style=flat-square&logo=vercel&logoColor=white)](https://rahul-vishwakarma-portfolio.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rahul%20Vishwakarma-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/rahul-vishwakarma-101346192)
+[![Email](https://img.shields.io/badge/Email-karmarahul67%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:karmarahul67@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-optimus--node--js-181717?style=flat-square&logo=github)](https://github.com/optimus-node-js)
 
-This project is licensed under the [MIT License](LICENSE).
+If you find this project useful, consider giving it a ⭐.
